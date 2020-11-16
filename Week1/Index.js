@@ -1,26 +1,35 @@
-var candyPrice  = 2;
+var candyPrice  = 2.45;
 var burgerPrice =  10.99; 
 
-var walletDollarAmount = 50;
-var walletCentAmounrt = .10;
+var womanWalletAmount = 50;
+var ManWalletAmounrt = 35;
 
-var numberOfCloseFriends = 2;
-var totalNumberOfFriends = 20;
+var womanNumOfFriends = 15;
+var manNumOfFriends = 24;
 
-var age = 26;
-var ageInMonths = 312;
+var womanAge = 26;
+var manAge = 27;
 
-var firstName = "Jarred";
-var firstNamePreferred = "Jay";
+var womanfirstName = "tessa";
+var manFirstName = "Jarred";
 
-var lastname = "Kilbride";
-var lastNamePrefredded = "Griffith";
+var womnaLastName = "kilbride";
+var manLastName = "Griffith";
 
-var middleNameInitial = "M";
-var middleName = "Mitch";
+var womanMiddleInitial = "N";
+var manMiddleInitial = "M";
 
-var totalWalletAmount = (walletDollarAmount + walletCentAmounrt); //Adding total wallet Amount
+var WomanAvgNumOfFriends = (womanNumOfFriends / womanAge); //Getting Avg numebr of firends made per year by Tessa
+var manAvgNumofclosefriends = (manNumOfFriends / manAge); //Getting Avg numebr of firends made per year by Jarred
 
-console.log("Total amount in wallet after perchasing burger is " + (totalWalletAmount - burgerPrice)); 
-console.log("Avg number of friends made per year is " + age / totalNumberOfFriends); 
-console.log("My full name is " + firstName + " " + middleNameInitial + ", " + lastNamePrefredded);
+var wonmanFriendsPerYear  =  WomanAvgNumOfFriends.toFixed(2); //Removing unwanted decimals 
+var manFriendsPerYear = manAvgNumofclosefriends.toFixed(2); //Removing unwanted decimals 
+
+console.log(womanfirstName + " total amount in wallet after perchasing a burger is " + (womanWalletAmount - burgerPrice)); 
+console.log(manFirstName + " total amount in wallet after perchasing Candy is " + (ManWalletAmounrt - candyPrice)); 
+
+console.log(womanfirstName + " avg number of friends made per year is " + wonmanFriendsPerYear); 
+console.log(manFirstName + " avg number of friends made per year is " + manFriendsPerYear); 
+
+console.log("The Womans full name is " + womanfirstName + " " + womanMiddleInitial + ", " + womnaLastName);
+console.log("The Mans full name is " + manFirstName + " " + manMiddleInitial + ", " + manLastName);
