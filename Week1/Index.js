@@ -25,8 +25,8 @@ var manAvgNumofclosefriends = (manNumOfFriends / manAge); //Getting Avg numebr o
 var wonmanFriendsPerYear  =  WomanAvgNumOfFriends.toFixed(2); //Removing unwanted decimals 
 var manFriendsPerYear = manAvgNumofclosefriends.toFixed(2); //Removing unwanted decimals 
 
-console.log(womanfirstName + " total amount in wallet after perchasing a burger is " + (womanWalletAmount - burgerPrice)); 
-console.log(manFirstName + " total amount in wallet after perchasing Candy is " + (ManWalletAmounrt - candyPrice)); 
+console.log(womanfirstName + "s total amount in wallet after perchasing a burger is " + (womanWalletAmount - burgerPrice)); 
+console.log(manFirstName + "s total amount in wallet after perchasing Candy is " + (ManWalletAmounrt - candyPrice)); 
 
 console.log(womanfirstName + " avg number of friends made per year is " + wonmanFriendsPerYear); 
 console.log(manFirstName + " avg number of friends made per year is " + manFriendsPerYear); 
