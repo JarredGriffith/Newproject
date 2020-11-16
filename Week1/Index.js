@@ -22,5 +22,5 @@ var middleName = "Mitch";
 var totalWalletAmount = (walletDollarAmount + walletCentAmounrt); //Adding total wallet Amount
 
 console.log("Total amount in wallet after perchasing burger is " + (totalWalletAmount - burgerPrice)); 
-console.log("Avg of friends made per year is " + age / totalNumberOfFriends); 
-console.log(firstName + " " + middleNameInitial + ", " + lastNamePrefredded);
+console.log("Avg number of friends made per year is " + age / totalNumberOfFriends); 
+console.log("My full name is " + firstName + " " + middleNameInitial + ", " + lastNamePrefredded);
