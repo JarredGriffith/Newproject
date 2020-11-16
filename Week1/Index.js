@@ -10,10 +10,10 @@ var manNumOfFriends = 24;
 var womanAge = 26;
 var manAge = 27;
 
-var womanfirstName = "tessa";
+var womanfirstName = "Tessa";
 var manFirstName = "Jarred";
 
-var womnaLastName = "kilbride";
+var womnaLastName = "Kilbride";
 var manLastName = "Griffith";
 
 var womanMiddleInitial = "N";
@@ -26,10 +26,10 @@ var wonmanFriendsPerYear  =  WomanAvgNumOfFriends.toFixed(2); //Removing unwante
 var manFriendsPerYear = manAvgNumofclosefriends.toFixed(2); //Removing unwanted decimals 
 
 console.log(womanfirstName + "s total amount in wallet after perchasing a burger is " + (womanWalletAmount - burgerPrice)); 
-console.log(manFirstName + "s total amount in wallet after perchasing Candy is " + (ManWalletAmounrt - candyPrice)); 
+console.log(manFirstName + "s total amount in wallet after perchasing candy is " + (ManWalletAmounrt - candyPrice)); 
 
 console.log(womanfirstName + " avg number of friends made per year is " + wonmanFriendsPerYear); 
 console.log(manFirstName + " avg number of friends made per year is " + manFriendsPerYear); 
 
-console.log("The Womans full name is " + womanfirstName + " " + womanMiddleInitial + ", " + womnaLastName);
-console.log("The Mans full name is " + manFirstName + " " + manMiddleInitial + ", " + manLastName);
+console.log("The womans full name is " + womanfirstName + " " + womanMiddleInitial + ", " + womnaLastName);
+console.log("The mans full name is " + manFirstName + " " + manMiddleInitial + ", " + manLastName);
