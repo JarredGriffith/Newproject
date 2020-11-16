@@ -28,8 +28,8 @@ var manFriendsPerYear = manAvgNumofclosefriends.toFixed(2); //Removing unwanted 
 console.log(womanfirstName + "s total amount in wallet after perchasing a burger is " + (womanWalletAmount - burgerPrice)); 
 console.log(manFirstName + "s total amount in wallet after perchasing candy is " + (ManWalletAmounrt - candyPrice)); 
 
-console.log(womanfirstName + " avg number of friends made per year is " + wonmanFriendsPerYear); 
-console.log(manFirstName + " avg number of friends made per year is " + manFriendsPerYear); 
+console.log(womanfirstName + "s avg number of friends made per year is " + wonmanFriendsPerYear); 
+console.log(manFirstName + "s avg number of friends made per year is " + manFriendsPerYear); 
 
 console.log("The womans full name is " + womanfirstName + " " + womanMiddleInitial + ", " + womnaLastName);
 console.log("The mans full name is " + manFirstName + " " + manMiddleInitial + ", " + manLastName);
