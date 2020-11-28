@@ -25,8 +25,33 @@ for (num == 0; num < 10; num++ ) {
     console.log(num);
 }
 
-let guys = ["Jarred", "Mike", "Chase"];
+let guys = ["Jarred", "Mike", "Chase","Spencer"];
 
 for(men in guys) {
 console.log(guys[men]);
 }
+
+for(men of guys) {
+    console.log(guys[men]);
+    }
+    
+//var question = prompt("What is your GF name?", "");
+
+/*function gfName(){
+    let question = prompt("What is your GF name?");
+    do (prompt(question));
+        while (question !== "Tessa"){
+            prompt("What is your GF name?")
+            continue loop1;
+            }    
+        if(question == "Tessa"){
+            alert("She's hella hot, you're so lucky");
+        }
+}
+
+ gfName();  */
+
+ var nick = prompt("Please enter your name", "");
+ while (nick == "" || nick == null) {
+   nick = prompt("Please enter your name", "");
+ }
