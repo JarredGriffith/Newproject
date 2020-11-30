@@ -8,10 +8,10 @@ let thirstLevel = 4;
 
 let shouldByIceCream = isHotOutside && hasMoneyInPocket;
 let willGoSwimming = isHotOutside && !isWeekday;
-let isAGoodDay = isHotOutside && hasMoneyInPocket;
-let willBuyMilk = isHotOutside && mopneyInWallet>0;
+let isAGoodDay = isHotOutside && hasMoneyInPocket && !isWeekday;
+let willBuyMilk = isHotOutside && thirstLevel>=3 && mopneyInWallet>=(2*costOfMilk);
 
-console.log(shouldByIceCream);
-console.log(willGoSwimming);
-console.log(isAGoodDay);
-console.log(willBuyMilk); 
+console.log("shouldByIceCream: " + shouldByIceCream);
+console.log("willGoSwimming: " + willGoSwimming);
+console.log("isAGoodDay: " + isAGoodDay);
+console.log("willBuyMilk: " + willBuyMilk); 
