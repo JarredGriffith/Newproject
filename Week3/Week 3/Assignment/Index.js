@@ -1,52 +1,52 @@
 //step 1
+// a
 let ages = [3, 9, 23, 64, 2, 8, 28,93];
 console.log(ages[ages.length-1] - ages[ages.length-ages.length]);
+//b
 ages.push (52); // adding now number to array
-//step 2
 console.log(ages[ages.length-1] - ages[ages.length-ages.length]); // subtracting the 1 and last numbers of the array. 
 
-//step 3
+// C
 let sumAges = 0;
 
 for (let i = 0; i < ages.length;i++) {
     sumAges += ages[i]; //totaling the ages
 }
-console.log(sumAges/ages.length); //Avg age in array
+console.log((sumAges/ages.length).toFixed(2)); //Avg age in array
 
-//step 4 
+//step 2
 let names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
 let sumNamelength = 0;
-
-//step 5
+ // step 2 A
 for (i=0;i<names.length;i++){
     sumNamelength += names[i].length;
 }
-console.log(sumNamelength/names.length); // need to remove decimals
+console.log((sumNamelength/names.length).toFixed(2)); // need to remove decimals
 
-//step 6
+//step 2 B
 let allNames = "" // var for names to be displayed on one line
 for (i in names) {
     allNames +=names[i] + " ";
 }
 console.log(allNames);
-//step 7
+//step 3
 console.log("Use array[array.length-1] to access the last element of any array" );
-//step 8
+//step 4
 console.log("Use array[0] to access the first element of any array" );
-//step 9
+//step 5
 let nameLengths = []
 
 for (let i = 0;i<names.length;i++) {
     nameLengths.push(names[i].length);
 }
 console.log(nameLengths)
-//step 10 
+//step 6
 let sum = 0;
 for (let i = 0; i<nameLengths.length;i++){
     sum += nameLengths[i];
 }
 console.log(sum)
-//step 11
+//step 7
 function stringTimes (word,n) {
     let repeatedtext = "";
 while (n>0) {
@@ -56,13 +56,13 @@ console.log(repeatedtext);
 }
 
 stringTimes("Hello",5);
-//step 12
+//step 8
 function fullname (firstName,lastName){
     console.log(firstName + " " + lastName);
 }
 fullname("Jarred","Griffith")
 
-//step 13
+//step 9
 let num = [100,34,56]
 function sum100(number){
     let sumNumber = 0; 
@@ -76,17 +76,17 @@ function sum100(number){
 }
 
 sum100(num);
-//step 14
+//step 10
 let numToBeAvg = [3, 9, 23, 64, 2, 8, 28];
 function avgNumber(number){
     totalNum = 0;
     for( let i = 0;i<number.length;i++) {
         totalNum += number[i]; 
     }
-    console.log(totalNum/number.length)
+    console.log((totalNum/number.length).toFixed(2))
 }
 avgNumber(numToBeAvg)
-//step 15
+//step 11
 let firstAvg = [10,20,70,50]
 let secondAvg = [1,30,40,38]
 
@@ -107,7 +107,7 @@ function avgArrays(number1,number2) {
 
 avgArrays(firstAvg,secondAvg);
 
-//step 16
+//step 12
 let isHotOutside = true;
 let moneyInPocket = 9.99;
 
@@ -119,8 +119,8 @@ function willBUyDrink(bool,money){
     }
 }
 willBUyDrink(isHotOutside,moneyInPocket); 
-//stpe 17 
-//dederman how much food you would need per number of cats you have. 
+//stpe 13
+//this will find how much food you would need per number of cats you have. 
 
 let numberOfCats = 3;
 let cansPerCat = .5;
