@@ -21,7 +21,7 @@ let sumNamelength = 0;
 for (i=0;i<names.length;i++){
     sumNamelength += names[i].length;
 }
-console.log((sumNamelength/names.length).toFixed(2)); // need to remove decimals
+console.log((sumNamelength/names.length).toFixed(2)); // remove decimals
 
 //step 2 B
 let allNames = "" // var for names to be displayed on one line
