@@ -23,7 +23,20 @@ let timesOut = () => setTimeout(function(){alert(`Time is up ${firstName}`);},10
 let askAreWeThereYet = () => alert("Are We there yet");
 //setInterval(askAreWeThereYet, 3000);
 
-//Step 4 
-let processSplicedValue = (num1,num2,arrays) => {
-    let indexElement
+//Step 4 A.B.C
+
+let processSplicedValue = (index,arrays,callBack) => {
+let i = arrays.splice(index,1);
+callBack(i);
 }
+
+let arraysToBeSpliced = ["One","Two","Three","four","five"];
+
+//Step D
+processSplicedValue(0,arraysToBeSpliced,console.log); 
+//Step 4 E
+processSplicedValue(0,arraysToBeSpliced,alert); 
+//Step 4 F
+processSplicedValue(1,arraysToBeSpliced,fun =>alert(fun)); 
+//Step 4 G
+processSplicedValue(1,arraysToBeSpliced,Write =>document.write(Write)); 
