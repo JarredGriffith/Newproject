@@ -21,7 +21,7 @@ timesOut();
 //Step 3 B 
 
 let askAreWeThereYet = () => alert("Are We there yet");
-//setInterval(askAreWeThereYet, 3000);
+setInterval(askAreWeThereYet, 3000);
 
 //Step 4 A.B.C
 
