@@ -16,7 +16,7 @@ fullName(name.fName,name.lName);
 
 //Step 3 A
 let timesOut = () => setTimeout(function(){alert(`Time is up ${firstName}`);},1000);
-//timesOut();
+timesOut();
 
 //Step 3 B 
 
@@ -39,4 +39,5 @@ processSplicedValue(0,arraysToBeSpliced,alert);
 //Step 4 F
 processSplicedValue(1,arraysToBeSpliced,fun =>alert(fun)); 
 //Step 4 G
-processSplicedValue(1,arraysToBeSpliced,Write =>document.write(Write)); 
+//displays spliced value in body of the web site
+processSplicedValue(1,arraysToBeSpliced,Write =>document.write(Write));
