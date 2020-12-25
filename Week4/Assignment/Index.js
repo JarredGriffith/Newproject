@@ -16,12 +16,12 @@ fullName(name.fName,name.lName);
 
 //Step 3 A
 let timesOut = () => setTimeout(function(){alert(`Time is up ${firstName}`);},1000);
-//timesOut();
+timesOut();
 
 //Step 3 B 
 
 let askAreWeThereYet = () => alert("Are We there yet");
-//setInterval(askAreWeThereYet, 3000);
+setInterval(askAreWeThereYet, 3000);
 
 //Step 4 A.B.C
 
@@ -37,5 +37,6 @@ processSplicedValue(0,arraysToBeSpliced,console.log);
 processSplicedValue(0,arraysToBeSpliced,alert); 
 //Step 4 F
 processSplicedValue(1,arraysToBeSpliced,fun =>alert(fun)); 
-//Step 4 G wites the splice value in the body of the page.
-processSplicedValue(1,arraysToBeSpliced,Write =>document.write(Write)); 
+//Step 4 G
+//displays spliced value in body of the web site
+processSplicedValue(1,arraysToBeSpliced,Write =>document.write(Write));
