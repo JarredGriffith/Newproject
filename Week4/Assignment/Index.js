@@ -26,11 +26,10 @@ let askAreWeThereYet = () => alert("Are We there yet");
 //Step 4 A.B.C
 
 let processSplicedValue = (index,arrays,callBack) => {
-let i = arrays.splice(index,1);
+let i = arrays.splice(index,1); //takes splice value and puts in an var
 callBack(i);
 }
-
-let arraysToBeSpliced = ["One","Two","Three","four","five"];
+let arraysToBeSpliced = ["One","Two","Three","four","five"]; 
 
 //Step D
 processSplicedValue(0,arraysToBeSpliced,console.log); 
@@ -38,5 +37,5 @@ processSplicedValue(0,arraysToBeSpliced,console.log);
 processSplicedValue(0,arraysToBeSpliced,alert); 
 //Step 4 F
 processSplicedValue(1,arraysToBeSpliced,fun =>alert(fun)); 
-//Step 4 G
+//Step 4 G wites the splice value in the body of the page.
 processSplicedValue(1,arraysToBeSpliced,Write =>document.write(Write)); 
