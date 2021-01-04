@@ -1,7 +1,7 @@
 /*let string = `kjshdf
 lksjdf
 lkjsdf`; //shift 1
-console.log(string) */
+console.log(string) 
 
 let name = (fName,lName) => `${fName} ${lName}`
 console.log(name("jarred","griffith"))
@@ -15,3 +15,4 @@ let somefun = (a,b)=> {
 }
 
 console.log(somefun("Jarred",9)); 
+*/
