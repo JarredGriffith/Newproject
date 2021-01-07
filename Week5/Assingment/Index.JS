@@ -118,7 +118,11 @@ class Car {
     }
     //deletes brand
     delete() {
-        let index = prompt("Enter the Index of the brand you wish to delete"); 
+        let allBransForDisplay = ''
+        for(let i =0;i<this.brand.length;i++) {
+            allBransForDisplay += i + ' - ' + this.brand[i].brandname + '\n'
+        }
+        let index = prompt(`Please select one of the following to delete` + '\n' + allBransForDisplay); 
         if (index>-1 && index < this.brand.length) {
             this.brand.splice(index,1);
         }
@@ -132,7 +136,7 @@ class Car {
         this.brandselected.car.push(new Car(newModel,newYear)); 
     }
     deleteCarModel() {
-        let index = prompt('Write out index of the model wsiehd to be deleted.');
+        let index = prompt(`Write out index of the model wsiehd to be deleted.`);
         if (index > -1 && index < this.brandselected.car.length ) {
             this.brandselected.car.splice(index,1);
         }
