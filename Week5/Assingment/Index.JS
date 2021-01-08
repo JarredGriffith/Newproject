@@ -65,10 +65,10 @@ class Car {
      mainMenu(){
          return prompt(`
          0 : Exit
-         1 : Create
-         2 : Delete Brand
-         3 : View Brands
-         4 : View all Brands
+         1 : Create Car Brand
+         2 : Delete Car Brand
+         3 : View Details for Car Brands
+         4 : View all Car Brands
          `)
      }
      // menu to add or delete car models
@@ -97,11 +97,15 @@ class Car {
 
     //shows one brand and the models under the brand
     viewBrands() {
-        let index = prompt('Enter brand you would like to see'); 
+        let allBransForDisplay = ''
+        for(let i =0;i<this.brand.length;i++) {
+            allBransForDisplay += i + ' - ' + this.brand[i].brandname + '\n'
+        }
+        let index = prompt('Please Select a Brand you would like to see' + '\n' + allBransForDisplay); 
         if(index > -1 && index < this.brand.length){
             this.brandselected = this.brand[index]; 
 
-            let des = this.brandselected.brandname + '\n';
+            let des = this.brandselected.brandname + '\n' + 'Current Models:' + '\n';
             for (let i = 0; i<this.brandselected.car.length; i++){
                 des += i + '-' + this.brandselected.car[i].model + ' ' + this.brandselected.car[i].year
             }
@@ -136,7 +140,11 @@ class Car {
         this.brandselected.car.push(new Car(newModel,newYear)); 
     }
     deleteCarModel() {
-        let index = prompt(`Write out index of the model wsiehd to be deleted.`);
+        let allCarsForDisplay = ''
+        for(let i =0;i<this.brandselected.car.length;i++) {
+            allCarsForDisplay += i + ' - ' + `${this.brandselected.car[i].model} ${this.brandselected.car[i].year}` + '\n'
+        }
+        let index = prompt(`Select the model of car wsihed to be deleted.` + '\n' + allCarsForDisplay);
         if (index > -1 && index < this.brandselected.car.length ) {
             this.brandselected.car.splice(index,1);
         }
