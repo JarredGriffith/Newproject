@@ -101,13 +101,15 @@ class Car {
         for(let i =0;i<this.brand.length;i++) {
             allBransForDisplay += i + ' - ' + this.brand[i].brandname + '\n'
         }
-        let index = prompt('Please Select a Brand you would like to see' + '\n' + allBransForDisplay); 
+        let index = prompt('Please Select a Brand you would like to see' + '\n' + 
+        allBransForDisplay); 
         if(index > -1 && index < this.brand.length){
             this.brandselected = this.brand[index]; 
 
             let des = this.brandselected.brandname + '\n' + 'Current Models:' + '\n';
             for (let i = 0; i<this.brandselected.car.length; i++){
-                des += i + '-' + this.brandselected.car[i].model + ' ' + this.brandselected.car[i].year
+                des += i + '-' + this.brandselected.car[i].model + ' ' + 
+                this.brandselected.car[i].year
             }
             let Selected = this.showCarBrandsOptions(des); 
             switch(Selected) {
@@ -126,7 +128,8 @@ class Car {
         for(let i =0;i<this.brand.length;i++) {
             allBransForDisplay += i + ' - ' + this.brand[i].brandname + '\n'
         }
-        let index = prompt(`Please select one of the following to delete` + '\n' + allBransForDisplay); 
+        let index = prompt(`Please select one of the following to delete` +
+         '\n' + allBransForDisplay); 
         if (index>-1 && index < this.brand.length) {
             this.brand.splice(index,1);
         }
@@ -142,7 +145,8 @@ class Car {
     deleteCarModel() {
         let allCarsForDisplay = ''
         for(let i =0;i<this.brandselected.car.length;i++) {
-            allCarsForDisplay += i + ' - ' + `${this.brandselected.car[i].model} ${this.brandselected.car[i].year}` + '\n'
+            allCarsForDisplay += i + ' - ' + 
+            `${this.brandselected.car[i].model} ${this.brandselected.car[i].year}` + '\n'
         }
         let index = prompt(`Select the model of car wsihed to be deleted.` + '\n' + allCarsForDisplay);
         if (index > -1 && index < this.brandselected.car.length ) {

@@ -23,7 +23,7 @@ class student {
         console.log(`${this.firstName} ${this.lastName} can be reached at ${this.number}`);
     }
 }
-
+// when making a new class must have new.
 let student1  = new student("tessa","Kilbride","7025044040","A"); 
 let student2  = new student("Jarred","Kilbride","7025044444","A"); 
 
