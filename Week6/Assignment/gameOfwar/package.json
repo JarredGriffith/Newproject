@@ -1,0 +1,15 @@
+{
+  "name": "gameofwar",
+  "version": "1.0.0",
+  "description": "game of war",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
