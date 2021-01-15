@@ -1,5 +1,6 @@
 var expect = chai.expect;
 
+/*
 describe("MyFunctions",function(){
     describe("#doSomething",function(){
         it("should have two pams",function(){
@@ -13,5 +14,32 @@ describe("MyFunctions",function(){
         });
     });
 });
-
-chai.expect
+*/
+describe('Game of war', function() {
+    describe('Card name', function() {
+      it('should provide the card name', function() {
+        let i = cardNameswitch(13);
+        expect(i).to.equal("K");
+      });
+    });
+    describe('Creat a deck', function() {
+        describe('deck', function() {
+          it('there shoud be 52 cards', function() {
+            let p = new Deck()
+            expect(p.deck.length).to.equal(52);
+          });
+        });
+    });
+    describe('deal deck', function() {
+        describe('split', function() {
+          it('there should be two decks of 26', function() {
+            comp1 = []
+            comp2 = []
+            let p = new Deck()
+            p.splitDeck()
+            expect(comp1.length).to.equal(26);
+            expect(comp2.length).to.equal(26);
+          });
+        });
+    });
+});
