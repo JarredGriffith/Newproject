@@ -14,16 +14,27 @@ Write Unit Tests using Mocha and Chai for each of the functions you write.
 comp1 = []
 comp2 = []
 
+
     class Deck {
         constructor() {
           this.deck = [];
-
+          const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
           // creates the deck and pushes to the deck array. 
-          for( let i = 0; i<4;i++){
+          
+          for (let suit in suits) {
             for(let i =1;i<=13;i++){
-              this.deck.push(i) 
+              this.deck.push({suit: suits[suit], value:i}) 
             }
           }
+      /*
+          const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
+          const values = ['Ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
+      
+          for (let suit in suits) {
+            for (let value in values) {
+              this.deck.push(`${values[value]} of ${suits[suit]}`);
+            }
+          } */
         }
 
         //shuffles the deck
@@ -53,6 +64,7 @@ comp2 = []
       //makes the deck then deals the card to the computers hands.
       let test = new Deck()
       test.shuffle();
+      console.log(test.deck);
       test.splitDeckAndDeal();
       //for testing to see the player hands. 
       //console.log(comp1)
@@ -68,28 +80,27 @@ comp2 = []
         roundCounter = roundCounter +1
         let computer1 = comp1.pop()
         let computer2 = comp2.pop()
-
         //if player 1 wins gives point and disaply win in the console
-        if(computer1>computer2) {
+        if(computer1.value>computer2.value) {
 
-          let realname2 = cardNameswitch(computer2)
-          let realname1 = cardNameswitch(computer1)
+          let realname2 = cardNameswitch(computer2.value)
+          let realname1 = cardNameswitch(computer1.value)
           computer1Points = computer1Points+1
-          console.log(`Computer 1 wins ${realname1} is Greater than ${realname2}, round ${roundCounter}`)
+          console.log(`Computer 1 wins ${realname1} of ${computer1.suit} is Greater than ${realname2} of ${computer2.suit}, round ${roundCounter}`)
         }
         //if player 2 wins gives point and disaply win in the console
-        else if(computer2>computer1) {
-          //comp2.unshift(computer1,computer2)
-          let realname2 = cardNameswitch(computer2)
-          let realname1 = cardNameswitch(computer1)
+        else if(computer2.value>computer1.value) {
+         
+          let realname2 = cardNameswitch(computer2.value)
+          let realname1 = cardNameswitch(computer1.value)
           computer2Points = computer2Points+1
-          console.log(`Computer 2 wins ${realname2} is Greater than ${realname1}, round ${roundCounter}`)
+          console.log(`Computer 2 wins ${realname2} of ${computer2.suit} is Greater than ${realname1} of ${computer1.suit}, round ${roundCounter}`)
         }
         //this for the tie. no points givin. 
         else {
-          let realname2 = cardNameswitch(computer2)
-          let realname1 = cardNameswitch(computer1)
-          console.log(`Round ${roundCounter} was a tie! ${realname1} = ${realname2}, No points givern!:(`)}
+          let realname2 = cardNameswitch(computer2.value)
+          let realname1 = cardNameswitch(computer1.value)
+          console.log(`Round ${roundCounter} was a tie! ${realname1} of ${computer1.suit} = ${realname2} of ${computer2.suit}, No points givern!:(`)}
         
       }
       if(computer1Points>computer2Points){
@@ -105,16 +116,16 @@ comp2 = []
     function cardNameswitch(num) {
       switch(num) {
         case 11:
-          return "J";
+          return "Jack";
           break; 
         case 12:
-          return "Q";
+          return "Queen";
           break; 
         case 13:
-          return "K";
+          return "King";
           break; 
         case 1:
-          return "A";
+          return "Ace";
           break; 
         default:
           return num        

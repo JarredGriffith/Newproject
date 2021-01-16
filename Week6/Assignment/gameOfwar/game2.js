@@ -11,9 +11,10 @@ Write Unit Tests using Mocha and Chai for each of the functions you write.
 */
 
 //these are blank arrays for both computer hands. 
+
+
 comp1 = []
 comp2 = []
-
 
     class Deck {
         constructor() {
@@ -25,15 +26,6 @@ comp2 = []
               this.deck.push(i) 
             }
           }
-      /*
-          const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
-          const values = ['Ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
-      
-          for (let suit in suits) {
-            for (let value in values) {
-              this.deck.push(`${values[value]} of ${suits[suit]}`);
-            }
-          } */
         }
 
         //shuffles the deck
@@ -78,6 +70,7 @@ comp2 = []
         roundCounter = roundCounter +1
         let computer1 = comp1.pop()
         let computer2 = comp2.pop()
+
         //if player 1 wins gives point and disaply win in the console
         if(computer1>computer2) {
 

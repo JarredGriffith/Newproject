@@ -19,7 +19,7 @@ describe('Game of war', function() {
     describe('Card name', function() {
       it('should provide the card name', function() {
         let i = cardNameswitch(13);
-        expect(i).to.equal("K");
+        expect(i).to.equal("King");
       });
     });
     describe('Creat a deck', function() {
@@ -31,12 +31,12 @@ describe('Game of war', function() {
         });
     });
     describe('deal deck', function() {
-        describe('split', function() {
+        describe('split and deal cards', function() {
           it('there should be two decks of 26', function() {
             comp1 = []
             comp2 = []
             let p = new Deck()
-            p.splitDeck()
+            p.splitDeckAndDeal()
             expect(comp1.length).to.equal(26);
             expect(comp2.length).to.equal(26);
           });
