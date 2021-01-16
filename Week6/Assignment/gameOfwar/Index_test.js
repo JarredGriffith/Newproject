@@ -18,7 +18,8 @@ describe("MyFunctions",function(){
 describe('Game of war', function() {
     describe('Card name', function() {
       it('should provide the card name', function() {
-        let i = cardNameswitch(13);
+        let p = new Deck();
+       let i =  p.cardNames(13);
         expect(i).to.equal("King");
       });
     });
