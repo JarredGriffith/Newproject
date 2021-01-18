@@ -116,5 +116,5 @@ comp2 = []
       Computer 1 : ${computer1Points} 
       computer 2 : ${computer2Points}`)
     }
-
+    // startes the game. 
     StartGame();
