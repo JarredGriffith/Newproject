@@ -1,0 +1,7 @@
+#box-model {
+    padding: 2px;
+    border-style: groove;
+    border-width: 3px;
+    margin: 30px;
+    background-color: greenyellow;
+}

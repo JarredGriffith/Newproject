@@ -1,0 +1,81 @@
+h1 {
+    text-align: center;
+    background-color: black;
+    color: rgb(228, 63, 41);
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0.5px;
+    margin: 2px;
+ }
+
+ h2,h3 {
+     text-align: center;
+ }
+
+ #videoheader {
+     font-size: 20px;
+ }
+
+ #linkclick {
+     text-align: center;
+     font-size: 25px;
+     padding: 0.5px;
+     margin: 2px;
+ }
+
+ #link {
+     text-align: center;
+     font-size: 20px;
+     padding: 5px;
+     margin: 1px;
+ }
+
+ #link:hover {
+     color: red;
+ }
+
+ img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+     background-color: rgb(196, 195, 195);
+  }
+
+  #imgborder {
+      border-style: solid;
+  }
+
+  ol{
+      text-align: center;
+      list-style-type: upper-alpha;
+      list-style-position: inside;
+  }
+
+  p {
+      text-align: center;
+  }
+
+  #video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+  }
+
+  .form {
+      text-align: center;
+  }
+
+  #buttons {
+      background-color: black;
+      color: white;
+  }
+
+  table {
+    margin-left: auto; 
+    margin-right: auto;
+    border-style: solid;
+}
