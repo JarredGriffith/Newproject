@@ -23,16 +23,17 @@ h1 {
      margin: 2px;
  }
 
- #link {
+ #link:hover {
+    color: red;
+}
+
+ .link {
      text-align: center;
      font-size: 20px;
      padding: 5px;
      margin: 1px;
  }
 
- #link:hover {
-     color: red;
- }
 
  img {
     display: block;
