@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<!--container for it dosent take up the whole screen-->
+<body class="container">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a calss="navbar-brand" href="bscomponents.html">Components</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+         aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="toggel navigation">
+        <!--this is going to the make the 3 bar with closed-->
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <!--look at id its the data-target above-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- the active with show active for testing-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">request info</a>
+                    </li>
+                    <!--drop down-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> drop down</a>
+                    
+                    <div class="dropdown-menu" aria-label="navbarNavDropdownMenuLink">
+                        <a class="dropdown-item" href="#"> item 1</a>
+                        <a class="dropdown-item" href="#"> item 2</a>
+                        <a class="dropdown-item" href="#"> item 3</a>
+                        <a class="dropdown-item" href="#"> item 4</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+  
+    </nav>
+
+    <!--linking bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>

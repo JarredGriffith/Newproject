@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <!--only used for testing-->
+    <style>
+        div {
+            border: black solid 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- you can add an numebr after the calss class="col-lg" to change the size or keep auto. exp class="col-lg-3 max is 12"-->
+            <div class="col-lg-6">
+                text
+            </div>
+            <div class="col-lg-4">
+                text
+            </div>
+            <div class="col-lg-2">
+                text
+            </div>
+        </div>
+    </div>
+<!--showcase the stacking of grid, there large - small and the react to the window becoming smaller or larger-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                text
+            </div>
+            <div class="col-sm">
+                text
+            </div>
+            <!-- this is to showcase that you can make rows within rows-->
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-sm-8">
+                        this is a 8
+                    </div>
+                    <div class="col-sm-4">
+                        this is a 4
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--
+        this for testing if bootstrap is working
+    <div class="alert alert-primary" role="alert">
+        it works
+    </div>
+    -->
+
+    <!--linking bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
