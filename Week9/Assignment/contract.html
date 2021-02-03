@@ -14,7 +14,6 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-
                 <!--Nav Bar-->
                 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -29,10 +28,10 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <!-- the active with show active for testing-->
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="index.html"> Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item  active">
                                 <a class="nav-link" href="contract.html">Contract</a>
                             </li>
                             </li>
@@ -42,55 +41,35 @@
             </div>
         </div>
     </div>
-    <br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6">
-                <img height="300" src="https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg"
-                    alt="JS on a screen">
-            </div>
-            <div class="col-lg-6">
-                <h1 class="text-center">About Me</h1>
-                <p class="text-center">Im a 26 year old up in coming front end developer.</p>
-            </div>
-            <!-- this is to showcase that you can make rows within rows-->
-        </div>
-    </div>
-    <br> <br>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="text-uppercase"> <b>Below is a list of Projects i have done and their contacts. </b></h3>
+                <h5 class="text-uppercase"> <b>Please fill out the form below and submit it for future project request.
+                    </b></h5>
             </div>
-
         </div>
     </div>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
 
-                <table class="table table-dark table-hover">
-                    <tr>
-                        <th>Platform</th>
-                        <th>Contact</th>
-                        <th>link to site</th>
-                    </tr>
-                    <tr>
-                        <td>Web sales</td>
-                        <td>tim@gmail.com</td>
-                        <td><a href="#">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>Locol Car Shop</td>
-                        <td>bob@AOL.com</td>
-                        <td><a href="#">Link</a></td>
-                    </tr>
-                </table>
+                <div class="mb-3">
+                    <label for="formEmail" class="form-label"> Contact Email address</label>
+                    <input type="email" class="form-control" id="formEmail" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="formRequest" class="form-label">Overview of request</label>
+                    <textarea class="form-control" id="formRequest" rows="3"></textarea>
+                </div>
+                <div>
+                    <input type="submit" name="submit" class="btn btn-secondary">
+                </div>
+
             </div>
-
         </div>
     </div>
-
 
     <!--linking bootstrap-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
