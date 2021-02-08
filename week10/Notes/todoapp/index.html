@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO App</title>
+    <link rel="stylesheet" href="../todoapp/CSS/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+    <br>
+    <!--this for the input-->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">End Date</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="New task">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div>
+    </div>
+<br>
+<!--table on page-->
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Task</th>
+            <th>Date Created</th>
+            <th>Start date</th>
+            <th>End date</th>
+            <th>Actions</th>
+        </tr>
+
+    </table>
+    <script src="index.js"></script>
+    <script src="../todoapp/CSS/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../todoapp/CSS/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+
+</html>
