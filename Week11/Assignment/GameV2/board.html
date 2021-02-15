@@ -3,40 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="../../jqlink/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
     <title>Tic Tac Toe Game</title>
+    <style>
+        div {
+            border: black solid 1px;
+        }
+    </style>
 </head>
-<body>
-<section>
-    <h3>Tic Tac Toe!!</h3>
-    <p>Who will win?</p>
-    <h2 class="game--status">as</h2>
-    <button id="restart" class="btn btn-primary">Restart Game</button>
-</section>
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+        <section>
+            <h3>Tic Tac Toe!!</h3>
+            <p>Who will win?</p>
+            <h2 class="game--status">as</h2>
+        </section>
+    </div>
+    </div>
 
-    <table class="game-board">
-        <tr>
-            <td class="cell" id="0"></td>
-            <td class="cell" id="1"></td>
-            <td class="cell" id="2"></td>
-        </tr>
-        <tr>
-            <td class="cell" id="3"></td>
-            <td class="cell" id="4"></td>
-            <td class="cell" id="5"></td>
-        </tr>
-        <tr>
-            <td class="cell" id="6"></td>
-            <td class="cell" id="7"></td>
-            <td class="cell" id="8"></td>
-        </tr>
-    </table>
+    <div class="row">
+        <div class="col-sm">
 
+        </div>
+    </div>
 
+<div class="row">
+    <div class="col-sm">
+        <table class="game-board">
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">
+        <button id="restart" class="btn btn-primary">Restart Game</button>
+    </div>
+</div>
 
-   
-   
+<script src="../../jqlink/node_modules/jquery/dist/jquery.js"></script>
+<script src="../../jqlink/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="game.js"></script>
 </body>
 </html>
