@@ -6,26 +6,21 @@
     <link rel="stylesheet" href="../../jqlink/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
     <title>Tic Tac Toe Game</title>
-    <style>
-        div {
-            border: black solid 1px;
-        }
-    </style>
 </head>
 <body class="container-fluid">
     <div class="row">
-        <div class="col-sm">
+        <div class="col-sm text-center">
         <section>
             <h3>Tic Tac Toe!!</h3>
             <p>Who will win?</p>
-            <h2 class="game--status">as</h2>
+            <p id="turn-display"></p>
         </section>
     </div>
     </div>
 
     <div class="row">
         <div class="col-sm">
-
+            <div id="banner"></div>
         </div>
     </div>
 
@@ -50,8 +45,9 @@
         </table>
     </div>
 </div>
+<br>
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm text-center">
         <button id="restart" class="btn btn-primary">Restart Game</button>
     </div>
 </div>
