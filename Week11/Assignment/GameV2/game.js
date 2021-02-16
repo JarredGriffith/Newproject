@@ -30,8 +30,6 @@ function handlePlayerChange() {
 
 //grabs all the cells
 let cells = document.querySelectorAll(".cell");
-//calling the start game. 
-//getElementByclass('.restart').addEventListener('click',startGame())
 
 function startGame() {
     //turn the game to a active state
@@ -70,8 +68,8 @@ function turn(id, player) {
         handlePlayerChange()
     //submits the text
     document.getElementById(id).innerHTML = player
-    //for texting reasons
-    console.log(origBoard)
+    //for testing reasons
+    //console.log(origBoard)
 
 }
 
