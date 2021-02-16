@@ -44,6 +44,7 @@ function startGame() {
     }
 }
 
+
 //will track the click
 function turnClick(cell) {
     //this checks if the game is active and if it isnt then it wont start
