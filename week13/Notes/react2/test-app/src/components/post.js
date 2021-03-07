@@ -8,6 +8,12 @@ let e = React.createElement;
 export default class Post  extends React.Component {
     //this is the JSX way of writing the HTML. both need the render.
     render() {
+        let comment = {
+            content:'test text', 
+            username: 'Tessa', 
+            postdate: '12-12-21'
+        }
+
         return(
             <div className="card w-75">
                 <div className="card-header bg-danger text-white">
@@ -19,9 +25,9 @@ export default class Post  extends React.Component {
                 <div className="card-footer">
                     <LikeButton/>
                     <ReplyButton/>
-                    <Comment/>
-                    <Comment/>
-                    <Comment/>
+                    <Comment {...comment}/>
+                    <Comment content ="test is some text2"/>
+                    <Comment content ="test is some text3"/>
                 </div>
             </div>
         )

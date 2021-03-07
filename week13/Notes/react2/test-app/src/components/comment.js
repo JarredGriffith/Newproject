@@ -11,10 +11,10 @@ export default class Comment extends React.Component {
                 //JSX way of writing the HTML
                 <div className="card w-75">
                     <div className="card-header bg-success text-white">
-                        Username and Time
+                    {this.props.username}
                     </div>
                    <div className="card-body">
-                       Comment Conent
+                       {this.props.content}
                    </div>
                     <div className="card-footer">
                         <LikeButton/> <span></span>
